@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Hexo博客搭建流程</title>
+    <link href="/2024/03/07/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/"/>
+    <url>/2024/03/07/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo博客搭建流程"><a href="#Hexo博客搭建流程" class="headerlink" title="Hexo博客搭建流程"></a>Hexo博客搭建流程</h1><h2 id="视频版"><a href="#视频版" class="headerlink" title="视频版"></a>视频版</h2><p><a href="https://www.bilibili.com/video/BV1Hv421r7SG/">Git + Gitee + Hexo 搭建个人博客_哔哩哔哩_bilibili</a></p><h2 id="程序员文字版"><a href="#程序员文字版" class="headerlink" title="程序员文字版"></a>程序员文字版</h2><h3 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h3><p>视频时长总计一个小时，我简单总结一下，到时候有问题再看视频或者问你身边的程序员。</p><ol><li><p>首先安装git和node.Js，我一直都有就没装，不会请百度或看视频</p></li><li><p>找个位置新建文件夹，右键点击git bash，输入npm install -g hexo后回车，出错了就按方向键的上键，再次执行，大概率是网络问题</p></li><li><p>git config –global http.postBuffer 524288000 将git网络传输设大</p></li><li><p>然后hexo init 初始化<br>hexo g 生产静态页面<br>hexo s 启动本地服务</p></li><li><p>找一个主题，比如视频里面的fluid，<a href="https://github.com/fluid-dev/hexo-theme-fluid">GitHub - fluid-dev&#x2F;hexo-theme-fluid: :ocean: 一款 Material Design 风格的 Hexo 主题 &#x2F; An elegant Material-Design theme for Hexo</a>下载到文件夹里的theme目录，剩下的其实在这个项目的readme里有，我简单说</p></li><li><p>把5的文件名修改成fluid，然后如下修改 Hexo 博客目录中的 <code>_config.yml</code>：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">theme:</span> <span class="hljs-string">fluid</span>  <span class="hljs-comment"># 指定主题</span><br><br><span class="hljs-attr">language:</span> <span class="hljs-string">zh-CN</span>  <span class="hljs-comment"># 指定语言，会影响主题显示的语言，按需修改</span><br></code></pre></td></tr></table></figure></li><li><p>然后在博客目录下创建 <code>_config.fluid.yml</code>，将主题的 config.yml 内容复制进去</p></li><li><p>然后hexo clean&#x2F;hexo g&#x2F;hexo s三联</p></li><li><p><code>config.xml</code>是主配置文件-框架配置文件<code>_config.fluid.yml</code>是主题配置文件，优先级高于上面这个，所以大概是要改配置先改主题的</p></li><li><p>如果8成功的话，你就可以在终端给你的URL打开网站了</p></li></ol><h3 id="上传GitHub"><a href="#上传GitHub" class="headerlink" title="上传GitHub"></a>上传GitHub</h3><p>上传到GitHub最重要的是你可以随时随地访问你的博客了，而不是打开电脑hexo s启动本地服务才能访问。</p><ol><li>新建仓库，然后把ssh放到_config.yml里,改成这样</li></ol><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">git@github.com:yourName/yourProjectName.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></td></tr></table></figure><p>(记得修改)(注意这里的分支是master)</p><ol start="2"><li>安装部署插件npm install –save hexo-deployer-git</li><li>然后去github上操作一番，主要是那个setting里的pages（保存master分支就行），然后hexo clean&#x2F;hexo g&#x2F;hexo d三联</li><li>在pages页面有URL访问路径</li></ol><h3 id="修改博客域名"><a href="#修改博客域名" class="headerlink" title="修改博客域名"></a>修改博客域名</h3><p>看这个大佬的就好，很简单<a href="https://blog.csdn.net/qq_43645530/article/details/104134069">https://blog.csdn.net/qq_43645530/article/details/104134069</a></p><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>剩下的比如上传文章，修改样式什么的我也在摸索，攒到下一个文章再发，还请收藏本博客</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>hexo入门</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2024/03/03/hello-world/"/>
     <url>/2024/03/03/hello-world/</url>
