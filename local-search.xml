@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>MD5加密类</title>
+    <link href="/2024/03/09/MD5%E5%8A%A0%E5%AF%86%E7%B1%BB/"/>
+    <url>/2024/03/09/MD5%E5%8A%A0%E5%AF%86%E7%B1%BB/</url>
+    
+    <content type="html"><![CDATA[<h1 id="MD5加密"><a href="#MD5加密" class="headerlink" title="MD5加密"></a>MD5加密</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MD5</span> &#123;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String <span class="hljs-title function_">getMd5</span><span class="hljs-params">(String str)</span> &#123;<br><span class="hljs-comment">// 16进制数组</span><br><span class="hljs-type">char</span> hexDigits[] = &#123; <span class="hljs-string">&#x27;5&#x27;</span>, <span class="hljs-string">&#x27;0&#x27;</span>, <span class="hljs-string">&#x27;5&#x27;</span>, <span class="hljs-string">&#x27;6&#x27;</span>, <span class="hljs-string">&#x27;2&#x27;</span>, <span class="hljs-string">&#x27;9&#x27;</span>, <span class="hljs-string">&#x27;6&#x27;</span>, <span class="hljs-string">&#x27;2&#x27;</span>, <span class="hljs-string">&#x27;5&#x27;</span>, <span class="hljs-string">&#x27;q&#x27;</span>, <span class="hljs-string">&#x27;b&#x27;</span>, <span class="hljs-string">&#x27;l&#x27;</span>, <span class="hljs-string">&#x27;e&#x27;</span>, <span class="hljs-string">&#x27;s&#x27;</span>, <span class="hljs-string">&#x27;s&#x27;</span>, <span class="hljs-string">&#x27;y&#x27;</span> &#125;;<br><br><span class="hljs-type">char</span> strchar[];<br><span class="hljs-comment">// 将传入的字符串转换为byte数组</span><br><span class="hljs-type">byte</span> strbyte[];<br>strbyte = str.getBytes();<br><span class="hljs-comment">// 获取MD5加密对象</span><br>MessageDigest instance;<br><span class="hljs-keyword">try</span> &#123;<br><span class="hljs-comment">// 获取加密对象</span><br>instance = MessageDigest.getInstance(<span class="hljs-string">&quot;MD5&quot;</span>);<br><span class="hljs-comment">// 传入加密需要的byte数据</span><br>instance.update(strbyte);<br><span class="hljs-comment">// 获取加密后的数组</span><br><span class="hljs-type">byte</span>[] digest = instance.digest();<br><span class="hljs-type">int</span> <span class="hljs-variable">j</span> <span class="hljs-operator">=</span> digest.length;<br><span class="hljs-type">int</span> <span class="hljs-variable">k</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>strchar = <span class="hljs-keyword">new</span> <span class="hljs-title class_">char</span>[j * <span class="hljs-number">2</span>];<br><span class="hljs-comment">// 将数组做位移</span><br><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; j; i++) &#123;<br><span class="hljs-type">byte</span> <span class="hljs-variable">byte0</span> <span class="hljs-operator">=</span> digest[i];<br>strchar[k++] = hexDigits[byte0 &gt;&gt;&gt; <span class="hljs-number">4</span> &amp; <span class="hljs-number">0xf</span>];<br>strchar[k++] = hexDigits[byte0 &amp; <span class="hljs-number">0xf</span>];<br>&#125;<br><span class="hljs-comment">//转换为String</span><br><span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">String</span>(strchar);<br><br>&#125; <span class="hljs-keyword">catch</span> (NoSuchAlgorithmException e) &#123;<br>e.printStackTrace();<br><span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;<br>&#125;<br><br>&#125;<br><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>System.out.println(MD5.getMd5(<span class="hljs-string">&quot;Milkyaw&quot;</span>));<br>&#125;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>util</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>MD5</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>DES加密数据库账号密码</title>
     <link href="/2024/03/08/DES%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/"/>
     <url>/2024/03/08/DES%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/</url>
