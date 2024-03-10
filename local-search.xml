@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>我的blender入门1</title>
+    <link href="/2024/03/10/%E6%88%91%E7%9A%84blender%E5%85%A5%E9%97%A81/"/>
+    <url>/2024/03/10/%E6%88%91%E7%9A%84blender%E5%85%A5%E9%97%A81/</url>
+    
+    <content type="html"><![CDATA[<h1 id="我的blender入门1"><a href="#我的blender入门1" class="headerlink" title="我的blender入门1"></a>我的blender入门1</h1><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>说是入门，其实也就简单学习了两天，跟着视频做了一个小模型。</p><p>blender在steam下载就可以，免费的。<br>教程的话去b站搜一下就好啦，不会像java一样有所保留，让你关注公众号什么的。<br><a href="https://www.bilibili.com/video/BV1zh411Y7LX">【合集8.21已更新93话】Blender 2.9-3.4黑铁骑士Ⅱ系统零基础入门教程(持续更新+中文字幕+普通话+不敷衍+义务教育+案例+学习)_哔哩哔哩_bilibili</a><br><a href="https://www.bilibili.com/video/BV14u41147YH/">【Kurt】Blender零基础入门教程 | Blender中文区新手必刷教程(已完结)_哔哩哔哩_bilibili</a><br><a href="https://www.bilibili.com/video/BV1aD4y1F7ZZ/">【Blender萌新教程】书本建模教程，一起来打造你的资产库_哔哩哔哩_bilibili</a></p><p><img src="/../img/mgf1.png" alt="图片" title="建模"></p><p><img src="/../img/mgf2.png" alt="图片" title="建模"></p><p>一些没用的笔记：</p><p>记得把blend文件放到资产库文件里面才行，要不然就一直在当前文件里了<br>为什么把书本外壳和纸张分开存为资产后纸张不见了是因为关联的变了，所以要存就一起<br>修改器全部应用就相当于保存修改了，所以要另外复制一份<br>很多快捷键用不了了不知道为什么，贴吧老哥解决了这个问题，按Ctrl+J的同时，鼠标要放在物体上才行!<br>当uv一面只有一个线时，选块面投影就行</p><h2 id="一些闲话"><a href="#一些闲话" class="headerlink" title="一些闲话"></a>一些闲话</h2><p>在GitHub上我新建了一个VRbook的仓库，打算建模出我看过的书籍，但后来因为很多书在互联网上都没有封面图片就只能作罢。<br>说是VRbook，其实我本来打算建模后放到VR里去看，因为我有一个Oculus Quest 2。我很喜欢Virtual Desktop待机场景的那个有窗户的房间，感觉坐在那里看着窗外的车流涌动，就好像那里真的是我的房间一样。<br>用VR能把很多这辈子也不能看到的场景让你身临其境的去感受，它能做到这一点就已经很棒了，所以等找到工作了我也可能再去学习建模、虚幻引擎什么的。我希望能创造一些有趣的场景。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>blender</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>blender</tag>
+      
+      <tag>VR</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>MD5加密类</title>
     <link href="/2024/03/09/MD5%E5%8A%A0%E5%AF%86%E7%B1%BB/"/>
     <url>/2024/03/09/MD5%E5%8A%A0%E5%AF%86%E7%B1%BB/</url>
