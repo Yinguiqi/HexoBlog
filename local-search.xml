@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2024/03/17/Koishi/"/>
+    <url>/2024/03/17/Koishi/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Koishi"><a href="#Koishi" class="headerlink" title="Koishi"></a>Koishi</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Koishi 是一个跨平台、可扩展、高性能的跨平台聊天机器人框架。</p><p>它的名字和图标设计来源于东方 Project 中的角色 古明地恋。古明地恋是一个会做出无意识举动的角色，取这个名字既象征着聊天机器人的主题，也蕴含了开发者为之倾注的热爱。</p><p>2月自己捣鼓的，但现在再想去尝试已经完全忘记怎么弄了（等我去看看笔记</p><p>这玩意经常报一堆错误，让我感觉回到了自学java的时候，很难受</p><h2 id="使用版"><a href="#使用版" class="headerlink" title="使用版"></a>使用版</h2><p><a href="https://koishi.chat/zh-CN/%E7%9B%B4%E6%8E%A5%E6%A0%B9%E6%8D%AE%E6%95%99%E7%A8%8B%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%EF%BC%8C%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8%E7%9A%84%E8%AF%9D%E5%B0%B1%E7%9C%8B%E7%BD%91%E9%A1%B5%E7%9A%84%E6%95%99%E7%A8%8B%E5%B0%B1%E8%A1%8C%E3%80%82">https://koishi.chat/zh-CN/直接根据教程下载安装软件，学习使用的话就看网页的教程就行。</a></p><p>首先需要说明的是，普通用户不能在QQ群里搭建自己的机器人，只能在QQ频道里搭建，这点直接把不玩频道的我给劝退了。想要有在QQ群搭建机器人的权限还得参加举办的机器人大赛，但不知道那是猴年马月的事了</p><h2 id="开发版"><a href="#开发版" class="headerlink" title="开发版"></a>开发版</h2><p>我一开始想做的效果是在tg频道里推送电脑文件夹的新增图片，但在上面使用版下载的软件并不能开发一个插件。</p><p>根据教程里的开发指南一步步做，然后会遇到很多问题，不要担心，去论坛找找（找不到也是常有的事</p><p>推荐不懂ts的直接用blockly插件开发，比如这样</p><p><img src="/../img/blockly.jpg" alt="图片" title="blockly搭积木"></p><p>最后经过一系列解决问题也能简单实现，但比我想要的效果相差甚远，便不了了之了</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Alist使用尝试</title>
     <link href="/2024/03/16/Alist%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/"/>
     <url>/2024/03/16/Alist%E4%BD%BF%E7%94%A8%E5%B0%9D%E8%AF%95/</url>
