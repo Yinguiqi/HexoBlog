@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>硬盘笔记1</title>
+    <link href="/2024/03/23/%E7%A1%AC%E7%9B%98%E7%AC%94%E8%AE%B0/"/>
+    <url>/2024/03/23/%E7%A1%AC%E7%9B%98%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="硬盘笔记1"><a href="#硬盘笔记1" class="headerlink" title="硬盘笔记1"></a>硬盘笔记1</h1><p>昨天想给我电脑加个固态硬盘，却不知道该买哪一个，今天找视频了解一下</p><p>我的电脑是四年前买的机械师T58-v笔记本，直接去找售后问可以装什么硬盘，客服说还有一个M.2接口2280的固态位置，其中一个接口支持sata协议。</p><p>他要是直接说还能装个sata m.2 2280的我就直接去买了，但之说其中一个接口支持sata协议就把我搞晕了。</p><p>其实我可以直接看设备管理器，找磁盘驱动器里的ssd，然后看属性的事件信息，里面有Disk&amp;Ven_NVMe&amp;Prod_kimtigo_SSD_512G这样的字样，所以自带的这个ssd应该是pcle的，所以那个空着的就是sata</p><h3 id="【硬核科普】选购机械硬盘的大坑，不看你就上当，详解SMR瓦楞式堆叠硬盘"><a href="#【硬核科普】选购机械硬盘的大坑，不看你就上当，详解SMR瓦楞式堆叠硬盘" class="headerlink" title="【硬核科普】选购机械硬盘的大坑，不看你就上当，详解SMR瓦楞式堆叠硬盘"></a>【硬核科普】选购机械硬盘的大坑，不看你就上当，详解SMR瓦楞式堆叠硬盘</h3><p><a href="https://www.bilibili.com/video/BV1rE411Q71m/">https://www.bilibili.com/video/BV1rE411Q71m/</a></p><p>了解SMR瓦楞式堆叠硬盘</p><h3 id="【硬核科普】固态硬盘为什么比机械硬盘快？快在哪里？"><a href="#【硬核科普】固态硬盘为什么比机械硬盘快？快在哪里？" class="headerlink" title="【硬核科普】固态硬盘为什么比机械硬盘快？快在哪里？"></a>【硬核科普】固态硬盘为什么比机械硬盘快？快在哪里？</h3><p><a href="https://www.bilibili.com/video/BV1dE411k7tU/">https://www.bilibili.com/video/BV1dE411k7tU/</a></p><h3 id="【硬核科普】为什么你购买的硬盘容量总是“缩水”的"><a href="#【硬核科普】为什么你购买的硬盘容量总是“缩水”的" class="headerlink" title="【硬核科普】为什么你购买的硬盘容量总是“缩水”的"></a>【硬核科普】为什么你购买的硬盘容量总是“缩水”的</h3><p><a href="https://www.bilibili.com/video/BV1UZ4y1M7TB/">https://www.bilibili.com/video/BV1UZ4y1M7TB/</a></p><h3 id="【硬核科普】硬盘的SATA-M-2-NGFF-NVME是什么意思，详解硬盘的总线协议"><a href="#【硬核科普】硬盘的SATA-M-2-NGFF-NVME是什么意思，详解硬盘的总线协议" class="headerlink" title="【硬核科普】硬盘的SATA M.2 NGFF NVME是什么意思，详解硬盘的总线协议"></a>【硬核科普】硬盘的SATA M.2 NGFF NVME是什么意思，详解硬盘的总线协议</h3><p><a href="https://www.bilibili.com/video/BV1Qv411t7ZL/">https://www.bilibili.com/video/BV1Qv411t7ZL/</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>电脑硬件</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>硬盘</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>关于我喜欢听的纯音乐十首（待完善）</title>
     <link href="/2024/03/22/%E5%85%B3%E4%BA%8E%E6%88%91%E5%96%9C%E6%AC%A2%E5%90%AC%E7%9A%84%E7%BA%AF%E9%9F%B3%E4%B9%90%E5%8D%81%E9%A6%96/"/>
     <url>/2024/03/22/%E5%85%B3%E4%BA%8E%E6%88%91%E5%96%9C%E6%AC%A2%E5%90%AC%E7%9A%84%E7%BA%AF%E9%9F%B3%E4%B9%90%E5%8D%81%E9%A6%96/</url>
