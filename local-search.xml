@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>基于一种脚本框架的具体实现</title>
+    <link href="/2024/06/25/%E5%9F%BA%E4%BA%8E%E4%B8%80%E7%A7%8D%E8%84%9A%E6%9C%AC%E6%A1%86%E6%9E%B6%E7%9A%84%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2024/06/25/%E5%9F%BA%E4%BA%8E%E4%B8%80%E7%A7%8D%E8%84%9A%E6%9C%AC%E6%A1%86%E6%9E%B6%E7%9A%84%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="基于一种脚本框架的具体实现"><a href="#基于一种脚本框架的具体实现" class="headerlink" title="基于一种脚本框架的具体实现"></a>基于一种脚本框架的具体实现</h1><p>提前申明，笔者编程水平极其有限，很多东西都不懂，文章仅供参考</p><h2 id="自己写的python脚本"><a href="#自己写的python脚本" class="headerlink" title="自己写的python脚本"></a>自己写的python脚本</h2><p>有人曾说过，如果一个事情需要重复三次以上，最好写个脚本。</p><p>我深深地认同这句话，只是一直没有机会写一个。</p><p>前端时间看别人赚钱，脑袋里就有了写脚本的想法，正好没什么事便开始搞。</p><p>打开PyCharm写了一堆sleep啊，click啊，一个自动化的脚本就完成了。主要用到的库也就pyautogui、pygetwindow和time。</p><p>但是这样的自动化有个最大的问题，那就是程序会抢你鼠标，你在运行过程中做不了其他事情。而且所有代码都是你一个个打上去，没有用到OCR识别之类的算法，就会导致不够健壮。</p><p>那便需要一个脚本框架了，最差的框架也比sleepclick好。</p><h2 id="MaaFramework基于图像识别的自动化黑盒测试框架"><a href="#MaaFramework基于图像识别的自动化黑盒测试框架" class="headerlink" title="MaaFramework基于图像识别的自动化黑盒测试框架"></a>MaaFramework基于图像识别的自动化黑盒测试框架</h2><p>地址：<a href="https://github.com/MaaXYZ/MaaFramework">https://github.com/MaaXYZ/MaaFramework</a></p><p>说起框架我就想到低代码，说起低代码我就想到了编程基础。现在回过头来看，编程其实学学变量、类、方法和循环什么的就行了，剩下的就找找框架做自己的东西，再不会再学，为时不晚。等全学完了再开始做东西是不现实的，同时是低效率的（对于业余程序员来说如此）。</p><p>打开项目地址后找到readme的即刻开始，把五个文档的内容全部看一遍。第一个快速开始的文档里有视频教程，建议看完。</p><p>快速开始里有项目模板，那个下载下来就可以用了。</p><p>然后根据文档里的<strong>任务流水线（Pipeline）协议</strong>把项目模板里的pipeline文件夹下的json文件改改就能实现自己需要的功能。</p><p>就像视频里说的一样，到这里为止你就学会了百分之八十的内容了，自己写个脚本是够用了。</p><p>启动测试是python -m MaaDebugger</p><h2 id="Python-集成"><a href="#Python-集成" class="headerlink" title="Python 集成"></a>Python 集成</h2><p>只靠pipeline协议还是不行，有些需求还是实现不了，比如输入指定字段，如果每次都去json文件里改就太麻烦了，</p><p>点开文档里的集成文档，里面有Python集成示例，点进去。</p><p>有趣的是示例里一点注释都没有，笔者完全看不懂，毕竟之前是靠百度才勉勉强强写出sleepclick的水平。后来在群里问了问才勉强懂一点。</p><p>首先先在assets下新建一个python文件夹（忘了原来有没有了，有就不用建），然后把这个示例直接复制粘贴过去。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">init_resources</span>(<span class="hljs-params">self</span>):<br>    user_path = <span class="hljs-string">&quot;./&quot;</span><br>    Toolkit.init_option(user_path)<br><br>    self.resource = Resource()<br>    <span class="hljs-comment">##改成你的这个项目文件夹到base</span><br>    <span class="hljs-keyword">await</span> self.resource.load(<span class="hljs-string">&quot;F:/project/MBD/assets/resource/base&quot;</span>)<br><br>    device_list = <span class="hljs-keyword">await</span> Toolkit.adb_devices()<br>    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> device_list:<br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;No ADB device found.&quot;</span>)<br>        exit()<br><br>    self.device = device_list[<span class="hljs-number">0</span>]<br>    self.controller = AdbController(<br>        <span class="hljs-comment">##改成测试里填写的那样</span><br>        adb_path=<span class="hljs-string">&#x27;G:/mumu/MuMu Player 12/shell/adb.exe&#x27;</span>,<br>        address=<span class="hljs-string">&#x27;127.0.0.1:16384&#x27;</span>,<br>    )<br></code></pre></td></tr></table></figure><p>再之后就是一些线程，同步异步之类的东西了，用我是用了，但其实一点没懂。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>工具</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>python</tag>
+      
+      <tag>脚本</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>找书方法</title>
     <link href="/2024/06/22/%E6%89%BE%E4%B9%A6/"/>
     <url>/2024/06/22/%E6%89%BE%E4%B9%A6/</url>
@@ -195,7 +222,9 @@
     
     <tags>
       
-      <tag>blender，漫画</tag>
+      <tag>blender</tag>
+      
+      <tag>漫画</tag>
       
     </tags>
     
