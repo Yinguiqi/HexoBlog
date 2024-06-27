@@ -104,6 +104,31 @@
   
   
   <entry>
+    <title>BanG Dream自动打歌脚本</title>
+    <link href="/2024/05/02/BangDream%E8%87%AA%E5%8A%A8%E6%89%93%E6%AD%8C%E8%84%9A%E6%9C%AC/"/>
+    <url>/2024/05/02/BangDream%E8%87%AA%E5%8A%A8%E6%89%93%E6%AD%8C%E8%84%9A%E6%9C%AC/</url>
+    
+    <content type="html"><![CDATA[<h1 id="BangDream自动打歌脚本"><a href="#BangDream自动打歌脚本" class="headerlink" title="BangDream自动打歌脚本"></a>BangDream自动打歌脚本</h1><p>BangDream是一款下落式音游</p><h2 id="两种方法"><a href="#两种方法" class="headerlink" title="两种方法"></a>两种方法</h2><p>研究了两天，自动打歌脚本分为两种</p><p>第一种是视觉逻辑判断，即经过截图判断落点的颜色变化执行相应的操作</p><p>第二种是读谱实现相应的操作</p><p>我在做的是第一种，一开始就想做个一招鲜，吃遍天的方法，下面是主要代码</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">check_color</span>(<span class="hljs-params">check_positions,position</span>):<br>    <span class="hljs-keyword">while</span> time.time()-start_time&lt;duration:<br>        st = time.time()<br>        screenshot = ImageGrab.grab(bbox=(<span class="hljs-number">0</span>,<span class="hljs-number">630</span>,<span class="hljs-number">1280</span>,<span class="hljs-number">650</span>))<br>        <span class="hljs-built_in">print</span>(time.time() - st)<br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">7</span>):<br>            color = screenshot.getpixel(check_positions[i])<br>            <span class="hljs-keyword">if</span> color != (<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,<span class="hljs-number">255</span>):<br>                pyautogui.click(position[i])<br></code></pre></td></tr></table></figure><p>其实就是截图判断检测落点是否非白，不是的话就点击</p><p>经过检测操作时间，哪怕是遍历7个点所需的时间也不是很多，更多的时间大头在截图，也就是第四行代码</p><p>截图一次由于各种因素限制导致最低也在30ms左右，这就导致打歌的准确度不行，经常great</p><p>目前能够解决这个问题的只有两个办法，一是想办法降低截屏所需时间，二是更改思路，改变算法</p><p>但两者最近都没思路只能暂且搁置，最近还有论文要写</p><h2 id="读谱打歌"><a href="#读谱打歌" class="headerlink" title="读谱打歌"></a>读谱打歌</h2><p>这也算一种脚本方法，首先要获得音谱，然后就是操作拆解，分为点、绿键、粉键</p><p>点的话pyautogui.click(position[i])就可以，绿键需要找可以模拟按住操作的库，粉键需要找可以模拟滑动的库</p><p>然后就是拼接，可以用sleep进行测试，所以这种方法很麻烦，一开始我就没打算这么搞</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>工具</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Steam 挂刀行情站</title>
     <link href="/2024/04/23/Steam%20%E6%8C%82%E5%88%80%E8%A1%8C%E6%83%85%E7%AB%99/"/>
     <url>/2024/04/23/Steam%20%E6%8C%82%E5%88%80%E8%A1%8C%E6%83%85%E7%AB%99/</url>
