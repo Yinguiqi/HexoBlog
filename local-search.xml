@@ -4,6 +4,56 @@
   
   
   <entry>
+    <title>Hexo博客迁移记录</title>
+    <link href="/2024/08/12/Hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%AE%B0%E5%BD%95/"/>
+    <url>/2024/08/12/Hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%AE%B0%E5%BD%95/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo博客迁移记录"><a href="#Hexo博客迁移记录" class="headerlink" title="Hexo博客迁移记录"></a>Hexo博客迁移记录</h1><p>详细去看<a href="https://blog.csdn.net/m0_51341794/article/details/136694058">https://blog.csdn.net/m0_51341794/article/details/136694058</a></p><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript">近日更换电脑后，想迁移本地的 hexo 博客，网上教程很多，但想做一个系统且全面的记录，故作此文<br>需要的步骤有:迁移 hexo 文件夹、git 客户端的下载与安装、本地Git与Github公钥连接、<span class="hljs-built_in">npm</span>的下载与安装、hexo的下载与安装<br></code></pre></td></tr></table></figure><p>只记录一下hexo的下载与安装</p><p>在博客文件夹下，打开git bush，输入以下命令：</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> hexo-cli -g<br>npm <span class="hljs-keyword">install</span> hexo-deployer-git --save<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>hexo入门</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>我的电脑</title>
+    <link href="/2024/08/07/%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91/"/>
+    <url>/2024/08/07/%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91/</url>
+    
+    <content type="html"><![CDATA[<h1 id="我的电脑"><a href="#我的电脑" class="headerlink" title="我的电脑"></a>我的电脑</h1><p>之前四年用的是1650的笔记本</p><p>8月7日，换了新电脑</p><img src="../img/dnpz.jpg" alt="图片" title="电脑配置" style="zoom:50%;" /><p>买的时候7800x3d涨了三百，再过十天涨了一千</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>工具</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>电脑</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Oculus Quest 2——从账号初始化开始</title>
     <link href="/2024/08/04/Oculus%20Quest%202%E2%80%94%E2%80%94%E4%BB%8E%E8%B4%A6%E5%8F%B7%E5%88%9D%E5%A7%8B%E5%8C%96%E5%BC%80%E5%A7%8B/"/>
     <url>/2024/08/04/Oculus%20Quest%202%E2%80%94%E2%80%94%E4%BB%8E%E8%B4%A6%E5%8F%B7%E5%88%9D%E5%A7%8B%E5%8C%96%E5%BC%80%E5%A7%8B/</url>
