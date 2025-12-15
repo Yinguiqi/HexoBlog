@@ -8,7 +8,7 @@
     <link href="/2025/12/15/Life%20Library/"/>
     <url>/2025/12/15/Life%20Library/</url>
     
-    <content type="html"><![CDATA[<h1 id="Life-Library-教程-v0-1-0"><a href="#Life-Library-教程-v0-1-0" class="headerlink" title="Life Library 教程 v0.1.0"></a>Life Library 教程 v0.1.0</h1><p>在做这款软件之前我一直有一个想法，我希望有一个电子书架用来存放我看过的漫画和小说。</p><p>本来我是打算做3D的，但奈何技术力有限，只能先从2D实现。</p><h2 id="目前实现的功能"><a href="#目前实现的功能" class="headerlink" title="目前实现的功能"></a>目前实现的功能</h2><p>如图所示，实现了鼠标左键点击跳转到对于书籍文件夹指定路径的功能，和右键的一些辅助功能。</p><ul><li><p><strong>鼠标右键功能</strong></p><ul><li><p>编辑书籍配置</p><ul><li>书名：用来配合搜索功能的，新添加后是默认的Book+数字</li><li>相对路径：小说&#x2F;入间人间&#x2F;在世界终焉的花园 作者：入间人间.epub，用来定位鼠标左键点击后的位置</li><li>书脊路径：user:&#x2F;&#x2F;book_textures&#x2F;在世界终焉的花园.png，书脊图片的路径，新建图书后有一个默认路径，右键设置书脊后会设置一个新路径</li><li>封面路径：和书脊路径同理，不过没有默认路径</li><li>缩放大小：目前的还没做自动缩放匹配大小，所以你得自己手动调整到合适的大小</li></ul></li><li><p>设置书脊：点击后进入一个文件夹，你可以从本地选择一个书脊图片，选中后会复制到一个文件夹里，并为当前书籍设置这个复制后的路径</p></li><li><p>设置封面：和设置书脊同理</p></li><li><p>删除书籍：顾名思义</p></li><li><p>3d监看器：如图2那样，是一个简化版3D实现，需要你同时有书脊和封面才能打开</p></li><li><p>打开所在文件夹：顾名思义</p></li></ul></li><li><p>菜单栏的文件里有添加书籍和退出应用的功能</p></li><li><p>编辑里有搜索书籍和设置书籍基础路径的功能</p></li></ul><p><img src="C:\Users\yinhe\AppData\Roaming\Typora\typora-user-images\image-20251215222200298.png" alt="image-20251215222200298"></p><p><img src="C:\Users\yinhe\AppData\Roaming\Typora\typora-user-images\image-20251215222259380.png" alt="image-20251215222259380"></p><h2 id="书脊获取方法"><a href="#书脊获取方法" class="headerlink" title="书脊获取方法"></a>书脊获取方法</h2><p>简单说就是去闲鱼或者什么其他途径获得包含你要找的书脊的图片，然后用ps，或者类似图片编辑器的透视变形的功能来摆正，然后裁剪一下就好了</p><p>我没用ps，用的是<a href="https://www.photopea.com/">https://www.photopea.com/</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Life-Library-教程-v0-1-0"><a href="#Life-Library-教程-v0-1-0" class="headerlink" title="Life Library 教程 v0.1.0"></a>Life Library 教程 v0.1.0</h1><p>在做这款软件之前我一直有一个想法，我希望有一个电子书架用来存放我看过的漫画和小说。</p><p>本来我是打算做3D的，但奈何技术力有限，只能先从2D实现。</p><h2 id="目前实现的功能"><a href="#目前实现的功能" class="headerlink" title="目前实现的功能"></a>目前实现的功能</h2><p>如图所示，实现了鼠标左键点击跳转到对于书籍文件夹指定路径的功能，和右键的一些辅助功能。</p><ul><li><p><strong>鼠标右键功能</strong></p><ul><li><p>编辑书籍配置</p><ul><li>书名：用来配合搜索功能的，新添加后是默认的Book+数字</li><li>相对路径：小说&#x2F;入间人间&#x2F;在世界终焉的花园 作者：入间人间.epub，用来定位鼠标左键点击后的位置</li><li>书脊路径：user:&#x2F;&#x2F;book_textures&#x2F;在世界终焉的花园.png，书脊图片的路径，新建图书后有一个默认路径，右键设置书脊后会设置一个新路径</li><li>封面路径：和书脊路径同理，不过没有默认路径</li><li>缩放大小：目前的还没做自动缩放匹配大小，所以你得自己手动调整到合适的大小</li></ul></li><li><p>设置书脊：点击后进入一个文件夹，你可以从本地选择一个书脊图片，选中后会复制到一个文件夹里，并为当前书籍设置这个复制后的路径</p></li><li><p>设置封面：和设置书脊同理</p></li><li><p>删除书籍：顾名思义</p></li><li><p>3d监看器：如图2那样，是一个简化版3D实现，需要你同时有书脊和封面才能打开</p></li><li><p>打开所在文件夹：顾名思义</p></li></ul></li><li><p>菜单栏的文件里有添加书籍和退出应用的功能</p></li><li><p>编辑里有搜索书籍和设置书籍基础路径的功能</p></li></ul><p><img src="/../img/sj.png" alt="图片" title="鼠标右键"></p><p><img src="/../img/shu.png" alt="图片" title="3D监看器"></p><h2 id="书脊获取方法"><a href="#书脊获取方法" class="headerlink" title="书脊获取方法"></a>书脊获取方法</h2><p>简单说就是去闲鱼或者什么其他途径获得包含你要找的书脊的图片，然后用ps，或者类似图片编辑器的透视变形的功能来摆正，然后裁剪一下就好了</p><p>我没用ps，用的是<a href="https://www.photopea.com/">https://www.photopea.com/</a></p>]]></content>
     
     
     <categories>
@@ -335,9 +335,9 @@
     
     <tags>
       
-      <tag>python</tag>
-      
       <tag>BanG Dream</tag>
+      
+      <tag>python</tag>
       
     </tags>
     
