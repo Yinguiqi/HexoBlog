@@ -131,31 +131,6 @@
   
   
   <entry>
-    <title>找书方法</title>
-    <link href="/2024/06/22/%E6%89%BE%E4%B9%A6/"/>
-    <url>/2024/06/22/%E6%89%BE%E4%B9%A6/</url>
-    
-    <content type="html"><![CDATA[<h1 id="找书"><a href="#找书" class="headerlink" title="找书"></a>找书</h1><h2 id="著名的出版物书籍"><a href="#著名的出版物书籍" class="headerlink" title="著名的出版物书籍"></a>著名的出版物书籍</h2><p>直接百度“XX书名+PDF下载”，然后存到网盘里下载就行</p><h2 id="漫画"><a href="#漫画" class="headerlink" title="漫画"></a>漫画</h2><p>漫画可以从开源漫画阅读器里下载，比如我用的就是Tachiyomi</p><p>通过比对各个图源里的资源，挑一个最好的下载</p><p>如果需要更清晰的可以在zlibrary里面找找</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>工具</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>书籍</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>BanG Dream自动打歌脚本</title>
     <link href="/2024/05/02/BangDream%E8%87%AA%E5%8A%A8%E6%89%93%E6%AD%8C%E8%84%9A%E6%9C%AC/"/>
     <url>/2024/05/02/BangDream%E8%87%AA%E5%8A%A8%E6%89%93%E6%AD%8C%E8%84%9A%E6%9C%AC/</url>
@@ -172,9 +147,9 @@
     
     <tags>
       
-      <tag>python</tag>
-      
       <tag>BanG Dream</tag>
+      
+      <tag>python</tag>
       
     </tags>
     
@@ -200,31 +175,6 @@
     <tags>
       
       <tag>steam</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>关于化工厂1</title>
-    <link href="/2024/03/27/%E5%85%B3%E4%BA%8E%E5%8C%96%E5%B7%A5%E5%8E%82/"/>
-    <url>/2024/03/27/%E5%85%B3%E4%BA%8E%E5%8C%96%E5%B7%A5%E5%8E%82/</url>
-    
-    <content type="html"><![CDATA[<h1 id="关于化工厂"><a href="#关于化工厂" class="headerlink" title="关于化工厂"></a>关于化工厂</h1><p>可以先看看这个，一共六篇文章。<a href="https://zhuanlan.zhihu.com/p/657270953">https://zhuanlan.zhihu.com/p/657270953</a></p><p>笔者大概要去某个邻海的化工厂扳阀门去了。面试的厂子里说副操、主操、班长都是倒班的。而升到技术员可能都快退休了。</p><h3 id="关于倒班"><a href="#关于倒班" class="headerlink" title="关于倒班"></a>关于倒班</h3><p>目前了解过的有四班三倒和四班两倒比较多，还面试过一个三班两倒（面试途中才知道的），还有三班三倒。</p><p>因为一个车间的机器是要24h不停的运作的，所以24小时内都得有人值班，所以就有了倒班的工作。</p><p>四班两倒就是把所有人分成四个班分别一班，二班，三班，四班每个班上12 小时，从早上八点到晚上八点，这就是两倒，白班和夜班，首先有一班上白班，其余三个班休息，然后夜班有二班上，其余三个班休息，第二天白班有三班上，其余三个班休息，夜班有四班上其余班休息，这样类推。四班三倒就是每个班上8小时。</p><p>三班两倒和三班三倒只能说不是人干的。</p><h3 id="关于职位"><a href="#关于职位" class="headerlink" title="关于职位"></a>关于职位</h3><p><a href="https://zhuanlan.zhihu.com/p/674710827%E8%BF%99%E7%AF%87%E6%96%87%E7%AB%A0%E6%8F%8F%E8%BF%B0%E7%9A%84%E5%BE%88%E8%AF%A6%E7%BB%86%EF%BC%8C%E6%88%91%E7%AE%80%E5%8D%95%E6%91%98%E8%A6%81%E4%B8%80%E4%B8%8B">https://zhuanlan.zhihu.com/p/674710827这篇文章描述的很详细，我简单摘要一下</a></p><ol><li>操作工</li></ol><blockquote><p>我目前就是干这个的，这个岗位也是绝大部分化工学子的最终归宿，只要应聘化工厂，百分之八十都是干这个。</p><p>这个职位的升职路线是：副外操，主现场外操，内操，班长，技术员，车间主任。</p><p>绝大部分人，没有关系一辈子就只能达到班长，班长也要倒班。</p></blockquote><p>文章中很详细的描述了具体的工作，总之就是很累还有生命危险</p><ol start="2"><li>仪表、设备、维修</li></ol><blockquote><p>总的来说，这两个岗位面临风险的概率小，受化学物质污染少，就是偶尔可能会很忙。</p><p>如果是应聘这几个岗位，还是可以来的，不过能应聘这几个岗位的，一般都是机器专业。</p></blockquote><ol start="3"><li>分析</li></ol><blockquote><p>一句话，神仙岗位。</p><p>一天工作几小时，其他时间全休息。缺点是上限低，工资低。</p></blockquote><p>也许我应该去应聘这个</p><ol start="4"><li>工艺员</li></ol><p>有的也叫技术员，是需要从操作工一点点赶上去的。有的私企就直接招这种。</p><h3 id="关于给即将毕业化工学子的几点建议"><a href="#关于给即将毕业化工学子的几点建议" class="headerlink" title="关于给即将毕业化工学子的几点建议"></a>关于给即将毕业化工学子的几点建议</h3><p><a href="https://zhuanlan.zhihu.com/p/672956713">https://zhuanlan.zhihu.com/p/672956713</a></p><blockquote><p>不开心就摆烂吧，摆烂没什么大不了的。</p></blockquote>]]></content>
-    
-    
-    <categories>
-      
-      <category>化工厂</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>化工厂</tag>
       
     </tags>
     
